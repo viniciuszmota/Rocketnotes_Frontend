@@ -1,6 +1,5 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-
+import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 export const Container = styled.div`
   width: 100%;
@@ -9,17 +8,17 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 105px 128px auto 64px;
-  grid-template-areas: 
-  "brand header"
-  "menu search"
-  "menu content"
-  "newnote content";
+  grid-template-areas:
+    "brand header"
+    "menu search"
+    "menu content"
+    "newnote content";
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
 export const Brand = styled.div`
   grid-area: brand;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +59,7 @@ export const Content = styled.div`
 `
 export const NewNote = styled(Link)`
   grid-area: newnote;
-  
+
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100%;
@@ -6,9 +6,9 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-rows: 105px auto;
-  grid-template-areas: 
-  "header"
-  "content";
+  grid-template-areas:
+    "header"
+    "content";
 
   > main {
     grid-area: content;
@@ -38,7 +38,7 @@ export const Content = styled.div`
 
   > button:first-child {
     align-self: end;
-  }    
+  }
 
   > h1 {
     font-size: 36px;
